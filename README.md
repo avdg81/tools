@@ -10,3 +10,5 @@ A simple Python script that shows the entries in a path line by line.  If run wi
 - `+`: duplicate entry (it has appeared previously).
 
 If you like colorized output then make sure that you have installed [`colorama`](https://pypi.org/project/colorama/).
+
+For convenience, there is also a Windows batch file that runs the Python script.  Note that `show_path.bat` assumes that you have set an environment variable named `MY_SCRIPT_DIR` which should point to the directory containing `show_path.py`.

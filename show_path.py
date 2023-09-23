@@ -12,6 +12,10 @@ except ImportError:
     pass
 
 
+def nonempty_locations_from(path):
+    return [location for location in path.split(os.pathsep) if location]
+
+
 def _print_location(location, is_dir, is_duplicate):
     prefix = "    "
     color = None
@@ -31,7 +35,7 @@ def _print_location(location, is_dir, is_duplicate):
 
 
 def _print_path(path):
-    locations = [location for location in path.split(os.pathsep) if location]
+    locations = nonempty_locations_from(path)
 
     # Initialize colorama for colored output
     if has_colorama:

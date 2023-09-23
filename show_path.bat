@@ -1,2 +1,2 @@
 @echo off
-python "%MY_TOOLS_DIR%\show_path.py" %*
+python "%~dp0\show_path.py" %*
